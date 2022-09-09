@@ -1,0 +1,134 @@
+.container_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 8px;
+    margin-bottom: 70px;
+    align-items: stretch;
+    opacity: 0.8;
+
+}
+
+.vgames {
+    background-color: var(--bg-color);
+    font-size: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 29px 2px rgba(144, 144, 144, 0.6);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.vgames p {
+    color: rgb(138, 0, 0);
+    font-weight: 600;
+    font-size: 3rem;
+
+}
+
+.vgames span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+
+}
+
+.container_nav {
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.container_nav_each {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+
+}
+
+.container_nav_each a:hover {
+    color: rgb(170, 170, 170);
+}
+
+
+
+.container_filters {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+}
+
+.container_filters button {
+    border-radius: .4rem;
+    margin: 0 .5rem;
+    padding: .4rem 1.5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: var(--bg-color);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0px 0px 29px 2px rgba(144, 144, 144, 0.6);
+    cursor: pointer;
+}
+
+.container_filters button:hover {
+    background-color: #fff;
+    color: var(--bg-color);
+    border: none;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+}
+
+.container_notFound {
+    height: 100%;
+}
+
+.container_pagination {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:800px) {
+
+    .container_filters {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .container_nav {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .container_nav_each {
+        margin: .8rem 1rem;
+        width: 80%;
+    }
+
+    .container_filters button {
+        margin-top: 1.4rem;
+    }
+
+
+
+    /* .container_filters button {} */
+
+}
